@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {Web3} from 'web3';
 import { Container, Row, Col, Form, Button, Table, Alert } from 'react-bootstrap';
-
+import Img from './erc20.png';
 
 const App = () => {
   const [web3, setWeb3] = useState(null);
@@ -200,6 +200,7 @@ const App = () => {
         <Col>
         
           <h1 className="text-primary">CyberForge Token DApp</h1>
+          <img src={Img} alt="CyberForge Token" width="1000" />
           <p>Account: <strong>{account}</strong></p>
           <p>Balance: <strong>{balance}</strong> </p>
           <p>Name: <strong>{name}</strong></p>
